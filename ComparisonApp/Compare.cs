@@ -12,7 +12,7 @@ public class Compare
         {
             object value1 = property.GetValue(test1, null);
             object value2 = property.GetValue(test2, null);
-            if (!value1.Equals(value2))
+            if (!Object.Equals(value1, value2))
             {
                 differences.Add(property);
             }
@@ -30,7 +30,7 @@ public class Compare
             object value1 = property.GetValue(first, null);
             object value2 = property.GetValue(second, null);
 
-            if (!value1.Equals(value2))
+            if (!Object.Equals(value1, value2))
             {
                 differences.Add(property);
             }
